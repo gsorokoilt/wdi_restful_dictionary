@@ -4,4 +4,8 @@ class EntriesController < ApplicationController
     #render :index (done automatically by rails but demonstrates action)
  end
 
+ def show
+  render :show
+  end
+
 end
