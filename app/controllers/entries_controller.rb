@@ -5,23 +5,27 @@ class EntriesController < ApplicationController
   end
 
   def show
-    render :show
+    #render :show
   end
 
   def new
-    render :new
+    #render :new
   end
 
   def create
-    redicrect_to entries_url
+    redirect_to entries_url
   end
 
   def edit
-    render :edit
+    #render :edit
   end
 
   def update
-    redicrect_to entry_url(params[:id])
+    redirect_to entry_url(params[:id])
+  end
+
+  def destroy
+    redirect_to entries_url
   end
 
 end
