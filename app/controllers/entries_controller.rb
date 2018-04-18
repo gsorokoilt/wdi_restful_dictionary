@@ -20,5 +20,8 @@ class EntriesController < ApplicationController
     render :edit
   end
 
+  def update
+    redicrect_to entry_url(params[:id])
+  end
 
 end
