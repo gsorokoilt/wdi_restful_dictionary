@@ -1,16 +1,20 @@
 class EntriesController < ApplicationController
 
- def index
+  def index
     #render :index (done automatically by rails but demonstrates action)
- end
-
- def show
-  render :show
   end
 
-def new
-  render :new
-end
+  def show
+    render :show
+  end
+
+  def new
+    render :new
+  end
+
+  def create
+    redicrect_to entries_url
+  end
 
 
 end
